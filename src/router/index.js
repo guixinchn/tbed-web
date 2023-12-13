@@ -175,7 +175,7 @@ const routes = [
 const router = new Router({
     //配置和组件之间的映射关系
     routes,
-    //base:'/tbed/',
+    base:'/tbedweb/',
     mode: 'history'//history  hash
 })
 

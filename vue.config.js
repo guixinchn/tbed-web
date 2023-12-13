@@ -1,5 +1,6 @@
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 module.exports = {
+    publicPath: '/tbedweb/',
     devServer: {
         disableHostCheck: true,
     },

@@ -153,7 +153,7 @@ axios.interceptors.response.use(config => {
 }, error => {
     console.log("拦截器-相应错误：" + error);
 })
-axios.get('/hellohao/config.json' + '?' + new Date().getTime() + Math.random() + Math.ceil(Math.random() * (10000 - 99999) + 99999)).then(data => {
+axios.get('/tbedweb/hellohao/config.json' + '?' + new Date().getTime() + Math.random() + Math.ceil(Math.random() * (10000 - 99999) + 99999)).then(data => {
     var json = data.data;
     store.commit("setServerHost", json.serverHost);
     axios.defaults.baseURL = json.serverHost;
